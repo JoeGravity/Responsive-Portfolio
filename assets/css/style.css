@@ -1,4 +1,5 @@
-    body {
+
+body {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777;
 }
@@ -31,39 +32,40 @@ h2 {
 }
 
 h3 {
-    font-size: x-large;
+    font-size: 17pt;
     padding: .6em 0;
 }
 
 nav {
     float: right;
     padding: 1.5em 0 0;
+    margin: 0 3% 0 auto;
 }
 
 header {
-    max-width: 960px;
     background-color: #fff;
     margin: auto;
 }
 
 .contain {
-    max-width: 960px;
+    max-width: 980px;
     margin: auto;
 }
 
 .logo {
-    width: 48px;
-    height: 48px;
-    margin: 8px;
+    max-width: 48px;
+    width: 25%;
+    height: 25%;
+    margin: 2%;
 }
 
 .maincontain {
-    max-width: 600px;
+    width: 66%;
     border-style: solid;
     border-width: 1px;
     border-color: #ddd;
     background-color: #fff;
-    padding: 10px 25px 20px;
+    padding: 8px 22px 18px;
     position: relative;
     top: 0px;
     left: 0px;
@@ -71,7 +73,7 @@ header {
 }
 
 .connect {
-    max-width: 300px;
+    width: 18%;
     border-style: solid;
     border-width: 1px;
     border-color: #ddd;
@@ -83,7 +85,7 @@ header {
 main {
     border-top: 2px solid #ccc;
     background-image: url("../images/hypnotize.png");
-    padding: 40px;
+    padding: 3%;
     overflow: hidden;
 }
 
@@ -98,9 +100,9 @@ footer {
 
 .namebox {
     background-color: #4aaaa5;
-    /* width:180px; */
     float: left;
     padding: 20px;
+    margin: 0 auto 0 3%;
 }
 
 .clearfix::after {
@@ -132,40 +134,61 @@ textarea {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 640px) {
-    
+@media only screen and (max-width: 768px) {
+    h3, h2 {
+        padding: 0;
+    }
     main {
         padding: 20px 5% 20px 5%;
         overflow: hidden;
     }
-    
     header {
         position: static;
     }
     .namebox {
-        float: none;
-        width: 100%;
-        padding: 20px 0 20px;
+        margin-left: 5%;
     }
     nav {
-        padding: 1.5em;
-        float: none;
-        text-align: center;
+        padding-right: 5%;
     }
-
-    .leftpic {
+    .maincontain, .connect {
+        float: none;
         width: 100%;
-        height: auto;
-        float: none;
-        margin-bottom: 16px;
-    }
-
-    .maincontain {
-        float: none;
-
-    }
-    .connect {
-        max-width: 100%;
+        max-width: 92%;
+        padding: 4%;
         margin-top: 25px;
-        float: none;
     }
+
+    @media only screen and (max-width: 640px) {
+        main {
+            padding: 20px 5% 20px 5%;
+            overflow: hidden;
+        }
+        header {
+            position: static;
+        }
+        .namebox {
+            float: none;
+            width: 100%;
+            padding: 20px 0 20px;
+            margin: 0;
+        }
+        nav {
+            padding: 1.5em;
+            float: none;
+            text-align: center;
+        }
+        .leftpic {
+            width: 100%;
+            height: auto;
+            float: none;
+        }
+        .maincontain, .connect {
+            float: none;
+            width: 100%;
+            max-width: 90%;
+            padding: 5%;
+        }
+        h2 {
+            padding:0;
+        }
