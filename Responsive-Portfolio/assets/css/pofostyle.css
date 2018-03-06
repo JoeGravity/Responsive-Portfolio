@@ -1,0 +1,72 @@
+
+.pofo {
+    width: 266px;
+    background-size: cover;    
+}
+
+.mainDIV{
+    position:relative;
+    /* background:yellow; */
+    width:100%;
+    min-width:315px;
+    padding-bottom:66px;
+}
+
+.leftDIV{
+    position:absolute;
+    height:266px;
+    top:0px;
+    left:0px;
+}
+
+.middleDIV{
+    height:266px;
+    margin:0px auto;
+}
+
+.rightDIV{
+    position:absolute;
+    top:0px;
+    right:0px;
+    height:266px;
+}
+
+#baby {
+    background-image: url("../images/baby.jpg");
+    background-size: cover;
+}
+
+#join {
+    background-image: url("../images/join.jpg");
+    background-size: cover;
+}
+
+#soiree {
+    background-image: url("../images/soiree.jpg");
+    background-size: cover;
+}
+
+#hats {
+    background-image: url("../images/hats.jpg");
+    background-size: cover;
+}
+
+#talent {
+    background-image: url("../images/talent.jpg");
+    background-size: cover;
+}
+.label {
+    position:absolute;
+    color: #fff;
+    width: 266px;
+    height:12mm;
+    top: 5cm;
+    text-align:center;
+    padding-top:6mm;
+    font-size:16pt;
+    font-family: "Georgia", Times, Times New Roman, serif;
+    font-weight: bold;
+    background-color: #4aaaa5;
+    background-blend-mode: multiply;
+    /* mix-blend-mode: multiply; */
+}
