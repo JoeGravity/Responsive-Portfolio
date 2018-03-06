@@ -1,2 +1,0 @@
-# bootstrap-pofo
-Bootstrap Portfolio
